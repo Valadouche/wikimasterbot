@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WikiMasters Auto-Packs",
+  "version": "1.0.0",
+  "description": "Ouvre un paquet WikiMasters toutes les 3 minutes et se met en pause sur les CAPTCHA pour validation manuelle.",
+  "permissions": ["storage", "alarms", "notifications", "tabs"],
+  "host_permissions": ["https://www.wiki-masters.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    { "matches": ["https://www.wiki-masters.com/*"], "js": ["content.js"], "run_at": "document_idle" }
+  ],
+  "action": { "default_popup": "popup.html", "default_title": "WikiMasters Auto-Packs", "default_icon": "icon.png" },
+  "icons": { "128": "icon.png" }
+}

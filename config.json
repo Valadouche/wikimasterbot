@@ -1,0 +1,18 @@
+{
+  "cdp_url": "http://127.0.0.1:9222",
+  "tab_url_contains": "wiki-masters.com/pulls",
+  "start_url": "https://www.wiki-masters.com/pulls",
+  "interval_seconds": 180,
+  "retry_seconds": 30,
+  "pack_button_selector": "",
+  "pack_button_text_regex": "^\\s*(ouvrir|open)( (un|le|a) (paquet|pack|booster))?\\s*$",
+  "stock_text_regex": "(\\d+)\\s*/\\s*(\\d+)\\s*paquets disponibles(?:\\s*Prochain dans\\s*([\\d:]+))?",
+  "card_title_selector": "main h3",
+  "next_card_selector": "main button:not([aria-label]):has(svg)",
+  "finish_button_text_regex": "^\\s*(continuer|terminer|fermer)\\s*$",
+  "reveal_button_text_regex": "^\\s*(encore \\d+ cartes?|continuer)\\s*$",
+  "login_url_regex": "login|signin|sign-in|connexion|/auth",
+  "confirm_timeout_seconds": 15,
+  "notify": true,
+  "screenshot_dir": ""
+}

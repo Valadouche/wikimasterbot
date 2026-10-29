@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<style>
+  body { width: 380px; margin: 0; padding: 14px; font: 13px system-ui, sans-serif; background: #111; color: #eee; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  .row { display: flex; justify-content: space-between; margin: 4px 0; }
+  .muted { color: #999; }
+  button { width: 100%; margin: 10px 0; padding: 9px; border: 0; border-radius: 8px; font-weight: 600; cursor: pointer; }
+  .on { background: #34d399; color: #062; }
+  .off { background: #444; color: #eee; }
+  .warn { color: #fbbf24; font-weight: 600; }
+  pre { background: #1b1b1b; border-radius: 8px; padding: 8px; height: 220px; overflow-y: auto; white-space: pre-wrap; font-size: 11px; margin: 0; }
+</style>
+</head>
+<body>
+  <h1>WikiMasters Auto-Packs</h1>
+  <div class="row"><span class="muted">État</span><span id="status">-</span></div>
+  <div class="row"><span class="muted">Paquets ouverts</span><span id="total">0</span></div>
+  <div class="row"><span class="muted">Prochaine ouverture</span><span id="next">-</span></div>
+  <button id="toggle" class="off">Démarrer</button>
+  <pre id="logs"></pre>
+  <script src="popup.js"></script>
+</body>
+</html>
